@@ -3,6 +3,7 @@
   "scripts": {
     "compile": "hardhat compile",
     "typechain": "hardhat typechain",
+    "test": "hardhat test",
     "prettier": "prettier --write 'contracts/**/*.sol' 'scripts/**/*.ts' 'test/**/*.ts'",
     "deploy": "hardhat run scripts/deploy.ts --network"
   },

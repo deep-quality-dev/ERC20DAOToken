@@ -7,5 +7,5 @@ interface DeployConfig {
 export const config: DeployConfig = {
   name: "DAO",
   symbol: "DAO",
-  decimals: 18
-}
+  decimals: 18,
+};

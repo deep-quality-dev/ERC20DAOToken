@@ -7,14 +7,14 @@ import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import {ERC20Pausable} from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
 import {ERC20Snapshot} from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Snapshot.sol";
-import {ITokenERC20DAOToken} from "./interface/ITokenERC20DAOToken.sol";
+import {IERC20DAOToken} from "./interface/IERC20DAOToken.sol";
 
-contract TokenERC20DAOToken is
+contract ERC20DAOToken is
   Ownable,
   ERC20,
   ERC20Pausable,
   ERC20Snapshot,
-  ITokenERC20DAOToken
+  IERC20DAOToken
 {
   event AuthorizedSnapshotter(address account);
   event DeauthorizedSnapshotter(address account);

@@ -47,8 +47,8 @@ contract ERC20DAOToken is
 
   /**
    * Burns tokens from an address.
-   * @param account the account to mint the tokens for
-   * @param amount the amount of tokens to mint.
+   * @param account the account to burn the tokens for
+   * @param amount the amount of tokens to burn.
    */
   function burn(address account, uint256 amount) external onlyOwner {
     _burn(account, amount);

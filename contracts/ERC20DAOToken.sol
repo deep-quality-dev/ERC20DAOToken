@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.0;
 
 // Uncomment this line to use console.log
 // import "hardhat/console.sol";
@@ -78,7 +78,7 @@ contract ERC20DAOToken is
    * Creates a token balance snapshot. Ideally this would be called by the
    * controlling DAO whenever a proposal is made.
    */
-  function snapshot() external returns (uint256) {
+  function snapshot() external override returns (uint256) {
     require(
       authorizedToSnapshot[_msgSender()] || _msgSender() == owner(),
       "Not authorized to snapshot"
